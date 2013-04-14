@@ -81,6 +81,9 @@ int main(int argc, char **argv, char **envp)
 		printf("<title>Memebase</title>\n");
 		printf("</head><body><p>\n");
 		printf("<center><h1>All your memebase is belong to us</h1></center>\n");
+		printf("<p><small><center>Source code at ");
+		printf("<a href=\"https://github.com/odkq/memebase\">\n");
+		printf("https://github.com/odkq/memebase</a></center></small></p>\n");
 		printf("<p><center><i>Please add your brave meme below\n");
 		printf("</i></center></p>\n");
 		/* url is defined upon calling gcc */
@@ -108,6 +111,7 @@ int main(int argc, char **argv, char **envp)
 		input_buffer[i] = '\0';
 		decoded_input_buffer = url_decode(input_buffer);
 			printf("content-type: text/plain\n\n");
+			printf("decoded_input_buffer: %s\n", decoded_input_buffer);
 		add_meme(decoded_input_buffer);
 		free(decoded_input_buffer);
 	}
