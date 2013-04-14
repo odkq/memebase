@@ -1,17 +1,4 @@
-# Object files
-*.o
-
-# Libraries
-*.lib
-*.a
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
+# Where to deploy on the remote server
+.remote_path
+# Remote url for the cgi
+.remote_url
