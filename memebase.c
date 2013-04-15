@@ -87,12 +87,12 @@ int main(int argc, char **argv, char **envp)
 		printf("<p><center><i>Please add your brave meme below\n");
 		printf("</i></center></p>\n");
 		/* url is defined upon calling gcc */
-		printf("<form action=\"");
+		printf("<center><form action=\"");
 		printf(URL);
 		printf("\" method=\"post\">");
 		printf("URL: <input type=\"text\" name=\"url\" size=\"30\"/> ");
 		printf("Comment: <input type=\"text\" name=\"comment\" size=\"30\"/><br />");
-		printf("<center><input type=\"submit\" value=\"Submit\" /></center>");
+		printf("<input type=\"submit\" value=\"Submit\" /></center>");
 		printf("\n<p>");
 		printf("<hr>\n");
 		printf("</p>\n");
