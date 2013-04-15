@@ -24,6 +24,6 @@ mrproper: clean
 	rm ${SQLITE_ARCHIVE}
 
 deploy: memebase
-	ascp memebase $(shell cat .remote_path)
+	./ascp memebase $(shell cat .remote_path)
 
 .PHONY: clean mrproper deploy
