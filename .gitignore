@@ -2,3 +2,5 @@
 .remote_path
 # Remote url for the cgi
 .remote_url
+# ascp local configuration
+.ascp
